@@ -1,6 +1,6 @@
 package aula06.classes;
 
-public class Circulo {
+public class Circulo implements FiguraGeometrica{
     //Atributos
     private int raio;
 
@@ -10,12 +10,10 @@ public class Circulo {
         this.raio = raio;
     }
     
-    //Métodos específicos da classe
-    public double calcularArea(){
-        return Math.PI * Math.pow(raio, 2);
-        
+    public double calcularArea() {
+       return Math.PI * Math.pow(raio, 2);
     }
-
+    
     //Métodos getters e setters
     public int getRaio() {
         return raio;
